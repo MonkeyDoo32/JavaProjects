@@ -1,0 +1,9 @@
+Sheepdog, Sam   Security    bergerdebrie    8to5chitchat
+Wolf, Ralph Security    sheepthief  punchtheclock
+Runner, Road    Deliveries  beepbeep    beepbeep
+Coyote, Wile E  Deliveries  supergenius acmecorporation
+Buzzard, Beaky  Waiter  bashful yupnope
+Hopper, Hippety Baker   giantmouse  kangaroo
+Webster, Emma   Chef    granny  canary
+Pussycat, Sylvester Owner   puddytat    sufferinsuccotash
+Bird, Tweety    Owner   tweetwittlebirdie   puttytat
