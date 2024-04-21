@@ -6,7 +6,16 @@ import java.util.Scanner;
 public class PuddyTat {
 
     public static void main(String[] args) throws IOException{
-        String f = "file.txt";
+
+        String[][] names;
+        names = readFile("file.txt");
+
+		password(names);
+
+
+    }
+
+    public static String[][] readFile(String f)throws IOException{
 
         Scanner sc = new Scanner(new BufferedReader(new FileReader(f)));
         int rows = 9;
@@ -22,10 +31,10 @@ public class PuddyTat {
            }
         }
         //System.out.println(Arrays.deepToString(array));
-        
-		password(array);
 
         sc.close();
+
+        return array;
     }
 
 
