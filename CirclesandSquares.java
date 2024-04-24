@@ -26,24 +26,28 @@ public class CirclesandSquares {
 		System.out.println("How many squares do you want?:");
 		rowsSquare = sc.nextInt();
 		
-		String [] cr = new String[rowsCircle];
-		String [] sq = new String[rowsSquare];
+		Circle [] cr = new Circle[rowsCircle];
+		Squares [] sq = new Squares[rowsSquare];
 		
 		for(int i = 0; i<cr.length; i++) {
-			cr[i] = Integer.toString(rand.nextInt(100));
-			//Circle a = new Circle(cr[i]);
+			Circle a = new Circle(rand.nextInt(100));
+			cr[i] = a;
 		}
 		for(int i = 0; i<sq.length; i++) {
-			sq[i] = Integer.toString(rand.nextInt(100));
-			//Squares a = new Squares(sq[i]);
+			Squares a = new Squares(rand.nextInt(100));
+			sq[i] = a;
 		}
 
 		CircleInfo(cr);
+		System.out.println();
+		System.out.println("-----------------------------");
 		SquareInfo(sq);
+
+		sc.close();
 		
 	}
 	
-	public static void CircleInfo(String[] c) {
+	public static void CircleInfo(Circle[] c) {
 		for (int i = 0; i < c.length; i++) {
 			System.out.println("The radius of our circle " + (i + 1) + " is " + c[i].getRadius());
 			System.out.println("The circumference of our circle " + (i + 1) + " is " + c[i].circumference());
@@ -53,7 +57,7 @@ public class CirclesandSquares {
 		 }
 	}
 	
-	public static void SquareInfo(String[] s) {
+	public static void SquareInfo(Squares[] s) {
 		for(int i = 0; i < s.length; i++) {
 			System.out.println("The side length of this square " + (i + 1) + " is " + s[i].getLength());
 			System.out.println("The area of the square " + (i + 1) + " is " + s[i].area());
